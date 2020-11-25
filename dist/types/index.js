@@ -10,8 +10,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 exports.__esModule = true;
-__exportStar(require("./AuthPayload"), exports);
-__exportStar(require("./Mutation"), exports);
-__exportStar(require("./Post"), exports);
 __exportStar(require("./Query"), exports);
-__exportStar(require("./User"), exports);
+__exportStar(require("./Types"), exports);
