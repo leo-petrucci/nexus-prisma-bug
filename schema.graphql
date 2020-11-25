@@ -28,6 +28,7 @@ type Query {
   filterPosts(searchString: String): [Post]
   me: User
   post(id: Int): Post
+  test: String
 }
 
 type User {

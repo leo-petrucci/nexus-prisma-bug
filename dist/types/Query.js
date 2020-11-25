@@ -5,6 +5,13 @@ var schema_1 = require("@nexus/schema");
 var utils_1 = require("../utils");
 exports.Query = schema_1.queryType({
     definition: function (t) {
+        t.field('test', {
+            type: 'String',
+            nullable: true,
+            resolve: function (parent, args, ctx) {
+                return "test";
+            }
+        });
         t.field('me', {
             type: 'User',
             nullable: true,

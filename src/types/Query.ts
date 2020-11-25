@@ -3,6 +3,14 @@ import { getUserId } from '../utils'
 
 export const Query = queryType({
   definition(t) {
+    t.field('test', {
+      type: 'String',
+      nullable: true,
+      resolve: (parent, args, ctx) => {
+        return "test"
+      },
+    })
+
     t.field('me', {
       type: 'User',
       nullable: true,
