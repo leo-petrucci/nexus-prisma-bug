@@ -1,7 +1,7 @@
 import { GraphQLServerLambda } from 'graphql-yoga'
-import { permissions } from './permissions'
-import { schema } from './schema'
-import { createContext } from './context'
+import { permissions } from '../permissions'
+import { schema } from '../schema'
+import { createContext } from '../context'
 
 const lambda = new GraphQLServerLambda({
   schema,

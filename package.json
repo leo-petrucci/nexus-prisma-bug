@@ -8,19 +8,21 @@
     "generate": "npm -s run generate:prisma && npm -s run generate:nexus",
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only src/schema",
-    "build:lambda": "netlify-lambda build dist",
-    "start:lambda": "netlify-lambda serve dist",
+    "build:lambda": "netlify-lambda build dist/server",
+    "start:lambda": "netlify-lambda serve dist/server",
     "dev": "ts-node-dev --no-notify --respawn --transpileOnly src/server"
   },
   "dependencies": {
-    "@nexus/schema": "0.15.0",
+    "@nexus/schema": "^0.19.1",
+    "@prisma/cli": "^2.12.0",
+    "@prisma/client": "^2.12.0",
     "bcryptjs": "2.4.3",
     "graphql-middleware": "4.0.1",
     "graphql-shield": "7.3.6",
     "graphql-yoga": "1.18.3",
     "jsonwebtoken": "8.5.1",
     "netlify-lambda": "^2.0.1",
-    "nexus-plugin-prisma": "0.18.2"
+    "nexus-plugin-prisma": "^0.25.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "2.4.2",
