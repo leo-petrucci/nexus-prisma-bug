@@ -9,5 +9,5 @@ const lambda = new GraphQLServerLambda({
   middlewares: [permissions],
 })
 
-exports.server = lambda.graphqlHandler
-exports.playground = lambda.playgroundHandler
+exports.handler = lambda.handler
+// exports.playground = lambda.playgroundHandler
